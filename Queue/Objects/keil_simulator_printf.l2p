@@ -1,0 +1,10 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\queue_ring_struct.o"
+".\objects\retarget_io.o"
+".\objects\startup_stm32f10x_hd.o"
+".\objects\system_stm32f10x.o"
+--library_type=microlib --strict --scatter ".\Objects\keil_simulator_printf.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\keil_simulator_printf.map" -o .\Objects\keil_simulator_printf.axf
